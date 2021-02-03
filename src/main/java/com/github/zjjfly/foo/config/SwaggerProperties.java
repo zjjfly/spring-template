@@ -1,6 +1,7 @@
 package com.github.zjjfly.foo.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
  * @author zjjfly[https://github.com/zjjfly]
  * @date 2021-02-02
  */
+@Profile("dev")
 @Component
 @ConfigurationProperties("swagger")
 public class SwaggerProperties {

@@ -6,6 +6,7 @@ import org.apache.commons.lang3.reflect.FieldUtils;
 import org.springframework.boot.SpringBootVersion;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -34,6 +35,7 @@ import java.util.List;
  * @author zjjfly[https://github.com/zjjfly]
  * @date 2021/2/3
  */
+@Profile("dev")
 @EnableOpenApi
 @Configuration
 public class SwaggerConfig implements WebMvcConfigurer {
