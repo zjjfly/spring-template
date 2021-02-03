@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: foo
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/messages
+    fallback-to-system-locale: false
+
+server:
+  port: 8088

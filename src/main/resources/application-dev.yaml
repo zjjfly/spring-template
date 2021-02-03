@@ -1,0 +1,19 @@
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: SpringBoot template
+  try-host: http://localhost:${server.port}
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/test
+    hikari:
+      username: root
+      password: 123456
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 180000
+      connection-timeout: 30000
+      connection-test-query: select 1
+      pool-name: My-HikariCP
