@@ -48,7 +48,8 @@ public class SwaggerConfig implements WebMvcConfigurer {
 
     @Bean
     public Docket createRestApi() {
-        String packageName = SwaggerConfig.class.getPackage().getName();
+        String pkgName = SwaggerConfig.class.getPackage().getName();
+        String controllerPkgName = pkgName.substring(0, pkgName.lastIndexOf(".") + 1) + "controller";
         return new Docket(DocumentationType.OAS_30)
                 .pathMapping("/")
 
@@ -63,7 +64,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
 
                 // 选择哪些接口作为swagger的doc发布
                 .select()
-                .apis(RequestHandlerSelectors.basePackage(packageName.replace(".config", ".controller")))
+                .apis(RequestHandlerSelectors.basePackage(controllerPkgName))
                 .paths(PathSelectors.any())
                 .build()
 
