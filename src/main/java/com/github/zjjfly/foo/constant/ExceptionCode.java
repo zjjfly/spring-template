@@ -1,4 +1,4 @@
-package com.github.zjjfly.foo.constraint;
+package com.github.zjjfly.foo.constant;
 
 /**
  * Exception code constraints container

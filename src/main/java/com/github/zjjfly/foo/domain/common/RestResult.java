@@ -1,4 +1,4 @@
-package com.github.zjjfly.foo.domain;
+package com.github.zjjfly.foo.domain.common;
 
 import com.github.zjjfly.foo.util.ExceptionHelper;
 import lombok.Getter;

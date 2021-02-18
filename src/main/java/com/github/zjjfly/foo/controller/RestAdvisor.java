@@ -1,8 +1,8 @@
 package com.github.zjjfly.foo.controller;
 
-import com.github.zjjfly.foo.constraint.ExceptionCode;
-import com.github.zjjfly.foo.domain.BizException;
-import com.github.zjjfly.foo.domain.RestResult;
+import com.github.zjjfly.foo.constant.ExceptionCode;
+import com.github.zjjfly.foo.domain.common.BizException;
+import com.github.zjjfly.foo.domain.common.RestResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
